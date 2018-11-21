@@ -2,7 +2,6 @@
 # File: guessinggame.sh
 
 # Create integer check function to verify inputs are integers.
-
 function integer {
 	while [[ ! $guess =~ ^-?[0-9]+$ ]]
 	do
@@ -11,13 +10,9 @@ function integer {
 	done
 }
 
-# Ask user to guess the number of files in the current directory.
+# Ask user to guess the number of files in the current directory.  Read guess, verify integer.
 echo "Welcome to Guessing Game.  Please guess how many files are in the current directory: "
-
-# Record the user's guess
 read guess
-
-# Verify guess is an integer.
 integer $guess
 
 # Record the number of files in the directory.
