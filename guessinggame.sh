@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # File: guessinggame.sh
 
-
 # Create integer check function to verify inputs are positive integers.
 function integer {
 	while [[ ! $guess =~ ^-?[0-9]+$ ]]
